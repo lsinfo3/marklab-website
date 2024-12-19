@@ -1,0 +1,58 @@
+#title: Marklab Website
+email: todo
+description: >- # this means to ignore newlines until "baseurl:"
+	Website of marklab
+
+baseurl: "marklab-website" # the subpath of your site, e.g. /blog
+
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+#theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+
+
+# Theme configuration
+logo: "/assets/images/i3.png"
+
+atom_feed:
+  hide: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+
+include: ["_pages"]
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: false
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      excerpt: "KuVS Fachgespräch - Würzburg Workshop on 6G Networks<br>6 - 8 Oct 2025"
+      header:
+        overlay_image: /assets/images/wue_header2.jpg
+        actions:
+          - label: "Call for Participation"
+            url: "/"  # IF THE CALL FOR PAPER STARTS --> CHANGE THIS TO THE LINE BELOW (This is just a temporary setting since cfp page is not updated yet)
+            #url: "/cfp/"  
+
+footer:
+  links:
+    - label: "Impressum"
+      url: "/WueWoWAS2025/impressum/"
