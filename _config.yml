@@ -1,7 +1,6 @@
 #title: Marklab Website
 email: todo
-description: >- # this means to ignore newlines until "baseurl:"
-	Website of marklab
+description: Website of marklab
 
 baseurl: "marklab-website" # the subpath of your site, e.g. /blog
 
