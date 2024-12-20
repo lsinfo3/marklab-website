@@ -6,7 +6,7 @@ baseurl: "marklab-website" # the subpath of your site, e.g. /blog
 
 # Theme settings
 #remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-remote_theme: "TeaGuns/odin"
+remote_theme: "TeaGuns/odin@e6bf3e0"
 #theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "dark"
 
