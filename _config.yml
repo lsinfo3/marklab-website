@@ -5,9 +5,10 @@ description: Website of marklab
 baseurl: "marklab-website" # the subpath of your site, e.g. /blog
 
 # Theme settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+#remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "TeaGuns/odin"
 #theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark"
+#minimal_mistakes_skin: "dark"
 
 
 # Theme configuration
