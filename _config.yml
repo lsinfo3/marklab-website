@@ -11,6 +11,8 @@ remote_theme: daattali/beautiful-jekyll
 #theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "dark"
 
+home_layout: home
+
 
 # Theme configuration
 logo: "/assets/images/i3.png"
