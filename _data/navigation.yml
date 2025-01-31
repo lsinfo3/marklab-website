@@ -1,22 +1,6 @@
 main:
   - title: "Home"
     url: /
- # - title: "CfP"
- #   url: /cfp/
- # - title: "Program"
- #   url: /program/
- # - title: "Registration"
- #   url: /registration/
- # - title: "Speedmentoring"
- #   url: /mentoring/
- # - title: "Venue"
- #   url: /venue/
-#  - title: "Download"
- #   url: /abstracts/
- # - title: "Program"
- #   url: /program/
- # - title: "Download"
- #   url: /abstracts/
   - title: "Archive"
     url: /archive/
   - title: "Contact"

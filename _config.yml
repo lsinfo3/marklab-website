@@ -1,4 +1,4 @@
-#title: Marklab Website
+title: Marklab Website
 email: todo
 description: Website of marklab
 
@@ -11,9 +11,6 @@ remote_theme: daattali/beautiful-jekyll
 #theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "dark"
 
-home_layout: home
-
-
 # Theme configuration
 logo: "/assets/images/i3.png"
 
@@ -22,42 +19,44 @@ atom_feed:
 
 plugins:
   - jekyll-remote-themeremote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
-  - jekyll-feed
-  - jekyll-include-cache
+#  - jekyll-feed
+#  - jekyll-include-cache
   
 
 include: ["_pages"]
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      classes: wide
-      author_profile: false
-      read_time: true
-      comments: false
-      share: false
-      related: false
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      classes: wide
-      author_profile: false
-      excerpt: "KuVS Fachgespräch - Würzburg Workshop on 6G Networks<br>6 - 8 Oct 2025"
-      header:
-        overlay_image: /assets/images/wue_header2.jpg
-        actions:
-          - label: "Call for Participation"
-            url: "/"  # IF THE CALL FOR PAPER STARTS --> CHANGE THIS TO THE LINE BELOW (This is just a temporary setting since cfp page is not updated yet)
-            #url: "/cfp/"  
+home_layout: home
 
-footer:
-  links:
-    - label: "Impressum"
-      url: "/WueWoWAS2025/impressum/"
+# defaults:
+#   # _posts
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: single
+#       classes: wide
+#       author_profile: false
+#       read_time: true
+#       comments: false
+#       share: false
+#       related: false
+#   # _pages
+#   - scope:
+#       path: ""
+#       type: pages
+#     values:
+#       layout: single
+#       classes: wide
+#       author_profile: false
+#       excerpt: "KuVS Fachgespräch - Würzburg Workshop on 6G Networks<br>6 - 8 Oct 2025"
+#       header:
+#         overlay_image: /assets/images/wue_header2.jpg
+#         actions:
+#           - label: "Call for Participation"
+#             url: "/"  # IF THE CALL FOR PAPER STARTS --> CHANGE THIS TO THE LINE BELOW (This is just a temporary setting since cfp page is not updated yet)
+#             #url: "/cfp/"  
+
+# footer:
+#   links:
+#     - label: "Impressum"
+#       url: "/WueWoWAS2025/impressum/"
