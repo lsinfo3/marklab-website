@@ -6,7 +6,8 @@ baseurl: "marklab-website" # the subpath of your site, e.g. /blog
 
 # Theme settings
 #remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-remote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
+# remote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
+remote_theme: daattali/beautiful-jekyll
 #theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "dark"
 
@@ -18,8 +19,10 @@ atom_feed:
   hide: true
 
 plugins:
+  - jekyll-remote-themeremote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
   - jekyll-feed
   - jekyll-include-cache
+  
 
 include: ["_pages"]
 
