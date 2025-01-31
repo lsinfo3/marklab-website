@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Welcome"
+---
+
+<div class="hero">
+    <h1>Welcome to Our Project</h1>
+    <p>We are making an impact through XYZ research.</p>
+    <a href="/about" class="btn">Learn More</a>
+</div>
+
+<div class="sections">
+    <div class="section">
+        <h2>Our Research</h2>
+        <p>We explore innovative solutions in XYZ.</p>
+    </div>
+    <div class="section">
+        <h2>Latest News</h2>
+        {% include recent-posts.html %}
+    </div>
+</div>
+
+<style>
+    .hero { text-align: center; padding: 50px; background: url('/assets/images/hero.jpg') center/cover; color: white; }
+    .sections { display: flex; justify-content: space-around; padding: 20px; }
+    .section { width: 45%; text-align: center; }
+    .btn { padding: 10px 20px; background: blue; color: white; text-decoration: none; border-radius: 5px; }
+</style>
