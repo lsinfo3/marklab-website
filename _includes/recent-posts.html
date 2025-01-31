@@ -1,0 +1,41 @@
+<div class="recent-posts">
+    <h2>Latest Blog Posts</h2>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  <style>
+    .recent-posts {
+      margin: 20px 0;
+    }
+    .recent-posts h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .recent-posts ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .recent-posts li {
+      margin: 10px 0;
+    }
+    .recent-posts a {
+      font-size: 1.2em;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .recent-posts a:hover {
+      text-decoration: underline;
+    }
+    .recent-posts .excerpt {
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+  
