@@ -4,25 +4,46 @@ title: "My Custom Landing Page"
 permalink: /
 ---
 
-<!-- Custom homepage content here -->
-<div class="hero">
-    <h1>Welcome to My Project</h1>
-    <p>Exploring innovative solutions in XYZ research.</p>
-    <a href="/about" class="btn">Learn More</a>
+<!-- Hero Section -->
+{% include hero.html %}
+
+<div class="container my-5">
+    <h2 class="text-center">Welcome to My Project</h2>
+    <p class="text-center lead">Exploring innovative solutions in XYZ research.</p>
+    <div class="text-center">
+        <a href="/about" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
 </div>
 
-<div class="recent-posts">
-    <h2>Latest Blog Posts</h2>
-    {% include recent-posts.html %}
+<!-- Recent Posts Section -->
+<div class="container recent-posts my-5">
+    <h2 class="text-center">Latest Blog Posts</h2>
+    <div class="row">
+        {% include recent-posts.html %}
+    </div>
 </div>
 
 <style>
-    .hero { text-align: center; padding: 50px; background: url('/assets/images/i3.png') center/cover; color: white; }
-    .recent-posts { margin: 20px 0; }
-    .recent-posts h2 { font-size: 1.5em; margin-bottom: 10px; }
-    .recent-posts ul { list-style-type: none; padding: 0; }
-    .recent-posts li { margin: 10px 0; }
-    .recent-posts a { font-size: 1.2em; color: #0077cc; text-decoration: none; }
-    .recent-posts a:hover { text-decoration: underline; }
-    .recent-posts .excerpt { color: #666; font-size: 0.9em; }
+    .hero { 
+        text-align: center; 
+        padding: 100px 20px; 
+        background: url('/assets/images/i3.png') center/cover; 
+        color: white; 
+    }
+    .recent-posts h2 { 
+        font-size: 1.8em; 
+        margin-bottom: 20px; 
+    }
+    .recent-posts a { 
+        font-size: 1.2em; 
+        color: #0077cc; 
+        text-decoration: none; 
+    }
+    .recent-posts a:hover { 
+        text-decoration: underline; 
+    }
+    .recent-posts .excerpt { 
+        color: #666; 
+        font-size: 0.9em; 
+    }
 </style>
