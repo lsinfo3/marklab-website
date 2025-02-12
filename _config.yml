@@ -5,85 +5,8 @@ description: Website of marklab
 baseurl: "marklab-website" # the subpath of your site, e.g. /blog
 
 # Theme settings
-#remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# remote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
-remote_theme: daattali/beautiful-jekyll
-#theme: minimal-mistakes-jekyll
-#minimal_mistakes_skin: "dark"
 
-# Theme configuration
-logo: "/assets/images/i3.png"
-
-atom_feed:
-  hide: true
-
+remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
-  - jekyll-remote-themeremote_theme: "cotes2020/jekyll-theme-chirpy@v7.2.3"
-#  - jekyll-feed
-#  - jekyll-include-cache
-  
+  - jekyll-remote-theme
 
-include: ["_pages"]
-
-#home_layout: home
-
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
-################
-# --- Logo --- #
-################
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/images/mark.png"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
-#title-img: /path/to/image
-
-
-# defaults:
-#   # _posts
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: single
-#       classes: wide
-#       author_profile: false
-#       read_time: true
-#       comments: false
-#       share: false
-#       related: false
-#   # _pages
-#   - scope:
-#       path: ""
-#       type: pages
-#     values:
-#       layout: single
-#       classes: wide
-#       author_profile: false
-#       excerpt: "KuVS Fachgespräch - Würzburg Workshop on 6G Networks<br>6 - 8 Oct 2025"
-#       header:
-#         overlay_image: /assets/images/wue_header2.jpg
-#         actions:
-#           - label: "Call for Participation"
-#             url: "/"  # IF THE CALL FOR PAPER STARTS --> CHANGE THIS TO THE LINE BELOW (This is just a temporary setting since cfp page is not updated yet)
-#             #url: "/cfp/"  
-
-# footer:
-#   links:
-#     - label: "Impressum"
-#       url: "/WueWoWAS2025/impressum/"
