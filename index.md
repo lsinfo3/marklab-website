@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Welcome
-hero_image: /assets/images/marklab_hero.png
-hero_height: is-fullwidth
+hero_image: /marklab-website/assets/images/marklab_hero.png
 ---
 
 # Hello, world!
