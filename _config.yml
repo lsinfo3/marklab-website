@@ -13,3 +13,9 @@ plugins:
 
 sass:
   style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      hero_image: /assets/images/marklab_hero.png
