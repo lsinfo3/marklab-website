@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Welcome
-hero_image: /images/marklab_hero.png
+hero_image: /asstes/images/marklab_hero.png
+hero_height: is-fullwidth
 ---
 
 # Hello, world!
