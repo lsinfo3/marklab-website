@@ -1,6 +1,10 @@
 ---
 ---
 
+.navbar {
+    background-color: $primary !important;
+  }
+
 $primary: #3E4C73;
 
 @import "main";
