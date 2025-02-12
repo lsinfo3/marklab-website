@@ -2,7 +2,7 @@ title: Marklab Website
 email: todo
 description: Website of marklab
 
-baseurl: "marklab-website" # the subpath of your site, e.g. /blog
+baseurl: "/marklab-website" # the subpath of your site, e.g. /blog
 
 # Theme settings
 
