@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Welcome
-hero_image: /asstes/images/marklab_hero.png
+hero_image: /assets/images/marklab_hero.png
 hero_height: is-fullwidth
 ---
 
