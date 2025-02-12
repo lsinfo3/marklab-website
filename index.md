@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome
+hero_image: /images/marklab_hero.png
 ---
 
 # Hello, world!
