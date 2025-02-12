@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Welcome
 hero_image: /images/marklab_hero.png
 ---
