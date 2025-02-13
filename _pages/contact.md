@@ -1,9 +1,14 @@
 ---
+layout: page
 title: Contact
-permalink: /contact/
+#subtitle: Mark
+permalink: /impressum/
+hero_image: /marklab-website/assets/images/marklab_hero3.png
+hero_darken: true
+---
 ---
 
-Regarding questions of any kind please contact Stefan Geißler:
+Regarding questions of any kind please contact:
 <br>
 
-[stefan.geissler (at) informatik.uni-wuerzburg.de](mailto:stefan.geissler@informatik.uni-wuerzburg.de)
+[marklab (at) informatik.uni-wuerzburg.de](mailto:marklab@informatik.uni-wuerzburg.de)
