@@ -4,7 +4,7 @@ items:
   - title: Platform for distributed mobile measurements
     #subtitle: Flexible options
     #icon: fas fa-tower-cell
-    icon: fas fa-signal-strong
+    icon: fas fa-signal
     description: >
       Measuring network QoS and sustainability metrics for different RATs and application layer protocolos.
     call_to_action_name: Learn more
