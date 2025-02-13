@@ -3,7 +3,7 @@
 - name: Locations
   link: /locations/
 - name: Results
-  linj: /results/
+  link: /results/
 - name: News
   link: /blog/
 - name: About
