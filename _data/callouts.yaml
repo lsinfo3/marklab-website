@@ -11,7 +11,7 @@ items:
   
   - title: Worldwide measurements
     #subtitle: Easy setup
-    icon: fa-map-location-dot
+    icon: fas fa-map-marker-alt
     icon_brand: true
     description: >
       MARKs are currently deployed in 6 different countries, and more are planned.
