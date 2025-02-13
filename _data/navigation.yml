@@ -1,12 +1,10 @@
-- title: Home
-  link: /
-- title: Platform
+- name: Platform
   link: /platform/
-- title: Locations
+- name: Locations
   link: /locations/
-- title: News
+- name: News
   link: /blog/
-- title: About
+- name: About
   link: /about/
 
 
