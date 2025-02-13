@@ -9,6 +9,12 @@ $primary: #3E4C73;
     background-color: #3E4C73 !important;
   }
 
-.hero .title {
-    font-size: 3rem !important; /* Adjust the size as needed */
-  }
+// Make the "Welcome" title stay large
+.hero-title {
+    font-size: 3rem !important;
+}
+
+// Make the callout titles smaller
+.callouts .title {
+    font-size: 1.5rem !important;
+}
