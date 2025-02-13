@@ -4,6 +4,11 @@
 $primary: #d87364;
 $link: #d87364;
 
+.image.is-half-size {
+    max-width: 50%;
+    height: auto
+}
+
 @import "main";
 
 .navbar {
@@ -21,9 +26,6 @@ $link: #d87364;
     font-size: 1.5rem !important;
 }
 
-.image.is-half-size {
-    max-height: 50%;
-    width: auto
-}
+
 
 //#d87364
