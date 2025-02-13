@@ -1,0 +1,27 @@
+style: is-light
+height: is-medium
+items:
+  - title: Multiple page layouts
+    subtitle: Flexible options
+    icon: fa-layer-group
+    description: >
+      Including sidebar, menubar, tabs and callouts for easy customization.
+    call_to_action_name: Learn more
+    call_to_action_link: /layouts/
+  
+  - title: Blog included
+    subtitle: Publish content
+    icon: fa-envelope
+    description: >
+      Layouts for blog and post pages included, making it simple to share updates.
+    call_to_action_name: View blog
+    call_to_action_link: /blog/
+
+  - title: Works with GitHub Pages
+    subtitle: Easy setup
+    icon: fa-github
+    icon_brand: true
+    description: >
+      Quick and easy setup using Jekyll and GitHub Pages.
+    call_to_action_name: Get started
+    call_to_action_link: /getting-started/
