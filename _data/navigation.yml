@@ -1,9 +1,14 @@
 main:
   - title: Home
     url: /
+  - title: Platform
+    url: /platform/
+  - title: Locations
+    url: /locations/
+  - title: News
+    url: /blog/
   - title: About
     url: /about/
-  - title: Contact
-    url: /contact/
+
 
 
