@@ -29,7 +29,7 @@ hero_darken: true
       // Add markers with tooltips
       var locations = [
           { lat: 49.781108225830415, lon: 9.97292187555465, name: "Würzburg, Germany", status: "Active" }, 
-          { lat: 49.781108225830415, lon: 9.97292187555465, name: "Munich, Germany", status: "Active" }, 
+          { lat: 48.15677758945259,  lon: 11.566836443047128, name: "Munich, Germany", status: "Active" },
           { lat: 63.43054077399492, lon: 10.395076455285725, name: "Trondheim, Norway", status: "Active" },
           { lat: 45.81512621395278, lon: 15.981975001057377, name: "Zagreb, Croatia", status: "Active" }, 
           { lat: 45.468426594164924, lon: 9.190887769941973, name: "Milan, Italy", status: "Active" },
