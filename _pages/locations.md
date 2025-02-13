@@ -46,7 +46,7 @@ hero_darken: true
 
       // Add circle markers with custom colors
       locations.forEach(function(location) {
-          var marker = L.circleMarker([location.lat, location.lon], {
+          var marker = L.marker([location.lat, location.lon], {
               color: statusColors[location.status],  // Border color
               fillColor: statusColors[location.status],  // Fill color
               fillOpacity: 0.7,
