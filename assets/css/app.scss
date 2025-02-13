@@ -9,8 +9,6 @@ $link: #d87364;
     height: auto
 }
 
-@import "main";
-
 .navbar {
     //background-color: #3E4C73 !important; 
     background-color: #2e3447 !important;
@@ -25,6 +23,10 @@ $link: #d87364;
 .callouts .title {
     font-size: 1.5rem !important;
 }
+
+
+
+@import "main";
 
 
 
