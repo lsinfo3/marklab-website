@@ -40,46 +40,14 @@ hero_darken: true
 
       // Status-based icons
       var statusIcons = {
-          "Active": L.icon({ iconUrl: '/assets/icons/marker-icon-red.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
-          "Planned": L.icon({ iconUrl: '/assets/icons/marker-icon-grey.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
+          "Active": L.icon({ iconUrl: '/marklab-website/assets/icons/marker-icon-red.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
+          "Planned": L.icon({ iconUrl: '/marklab-website/assets/icons/marker-icon-grey.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
       };
 
       // Add markers with status-based colors
       locations.forEach(function(location) {
           var marker = L.marker([location.lat, location.lon], { icon: statusIcons[location.status] }).addTo(map);
           
-          // Tooltip
-          marker.bindTooltip(`<strong>${location.name}</strong><br>Status: ${location.status}`, 
-              { permanent: false, direction: "top" });
-      });
-  });
-</script>
-
-
-
-
-
-
-
-
-
-
-
-      // Status colors
-      var statusColors = {
-          "Active": "red",
-          "Planned": "grey"
-      };
-
-      // Add circle markers with custom colors
-      locations.forEach(function(location) {
-          var marker = L.marker([location.lat, location.lon], {
-              color: statusColors[location.status],  // Border color
-              fillColor: statusColors[location.status],  // Fill color
-              fillOpacity: 0.7,
-              radius: 8  // Adjust size of marker
-          }).addTo(map);
-
           // Tooltip
           marker.bindTooltip(`<strong>${location.name}</strong><br>Status: ${location.status}`, 
               { permanent: false, direction: "top" });
