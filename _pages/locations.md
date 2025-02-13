@@ -38,6 +38,33 @@ hero_darken: true
           { lat: -8.478312628480555, lon: -54.89392071546018, name: "Brasil", status: "Planned" }
       ];
 
+      // Status-based icons
+      var statusIcons = {
+          "Active": L.icon({ iconUrl: '/assets/icons/marker-icon-red.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
+          "Planned": L.icon({ iconUrl: '/assets/icons/marker-icon-grey.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
+      };
+
+      // Add markers with status-based colors
+      locations.forEach(function(location) {
+          var marker = L.marker([location.lat, location.lon], { icon: statusIcons[location.status] }).addTo(map);
+          
+          // Tooltip
+          marker.bindTooltip(`<strong>${location.name}</strong><br>Status: ${location.status}`, 
+              { permanent: false, direction: "top" });
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
       // Status colors
       var statusColors = {
           "Active": "red",
