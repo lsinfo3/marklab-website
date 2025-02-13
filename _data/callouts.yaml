@@ -3,7 +3,7 @@ height: is-medium
 items:
   - title: Platform for distributed mobile measurements
     #subtitle: Flexible options
-    icon: fas fa-tower-cell
+    icon: fa-tower-cell
     description: >
       Measuring network QoS and sustainability metrics for different RATs and application layer protocolos.
     call_to_action_name: Learn more
