@@ -1,0 +1,28 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timeline-item .icon {
+    background: #004080;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.timeline-item .content {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
