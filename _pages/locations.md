@@ -44,19 +44,18 @@ hero_darken: true
           "Planned": "grey"
       };
 
-      // Add markers with custom tooltips
+      // Add circle markers with custom colors
       locations.forEach(function(location) {
-          var marker = L.marker([location.lat, location.lon]).addTo(map);
+          var marker = L.circleMarker([location.lat, location.lon], {
+              color: statusColors[location.status],  // Border color
+              fillColor: statusColors[location.status],  // Fill color
+              fillOpacity: 0.7,
+              radius: 8  // Adjust size of marker
+          }).addTo(map);
 
-          // Create custom tooltip content
-          var tooltipContent = `
-              <div style="background: ${statusColors[location.status]}; color: white; padding: 5px; border-radius: 5px;">
-                  <strong>${location.name}</strong><br>
-                  Status: ${location.status}
-              </div>
-          `;
-
-          marker.bindTooltip(tooltipContent, { permanent: false, direction: "top" });
+          // Tooltip
+          marker.bindTooltip(`<strong>${location.name}</strong><br>Status: ${location.status}`, 
+              { permanent: false, direction: "top" });
       });
   });
 </script>
