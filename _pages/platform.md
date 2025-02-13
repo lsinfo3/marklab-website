@@ -13,4 +13,4 @@ menubar: menu
 # Page 1 Content
 This is the content for Page 1.
 
-{% include image-modal.html ratio="width: 50%; height: 50%;" link='/assets/images/mark.png' alt="MARK" style="width: 40%; height: 40%;" %}
+{% include image-modal.html ratio="is-128x128" link='/assets/images/mark.png' alt="MARK" style="width: 40%; height: 40%;" %}
