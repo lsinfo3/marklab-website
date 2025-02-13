@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Marklab
-permalink: /platform/
+title: Locations
+permalink: /locations/
 ---
 
 # Page 1 Content

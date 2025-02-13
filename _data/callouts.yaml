@@ -1,29 +1,29 @@
 style: is-light
 height: is-medium
 items:
-  - title: Platform for distributed mobile measurements
+  - title: Distributed mobile measurements
     #subtitle: Flexible options
     #icon: fas fa-tower-cell
     icon: fas fa-signal
     description: >
       Measuring network QoS and sustainability metrics for different RATs and application layer protocolos.
     call_to_action_name: Learn more
-    call_to_action_link: /layouts/
+    call_to_action_link: /platform/
   
-  - title: Worldwide measurements
+  - title: Worldwide depolyments
     #subtitle: Easy setup
     icon: fas fa-map-marker-alt
     icon_brand: true
     description: >
       MARKs are currently deployed in 6 different countries, and more are planned.
     call_to_action_name: See locations
-    call_to_action_link: /getting-started/
+    call_to_action_link: /locations/
 
-  - title: Blog 
+  - title: Mark Blogsberg 
     #subtitle: Publish content
     icon: fa-envelope
     description: >
-      Getting the newest information about MARK
+      Getting the newest information about MARK.
     call_to_action_name: See here
     call_to_action_link: /blog/
 
