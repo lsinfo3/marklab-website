@@ -1,27 +1,28 @@
 style: is-light
 height: is-medium
 items:
-  - title: Multiple page layouts
-    subtitle: Flexible options
-    icon: fa-layer-group
+  - title: Platform for distributed mobile measurements
+    #subtitle: Flexible options
+    icon: fa-regular fa-tower-cell
     description: >
-      Including sidebar, menubar, tabs and callouts for easy customization.
+      Measuring network QoS and sustainability metrics for different RATs and application layer protocolos.
     call_to_action_name: Learn more
     call_to_action_link: /layouts/
   
-  - title: Blog included
-    subtitle: Publish content
-    icon: fa-envelope
-    description: >
-      Layouts for blog and post pages included, making it simple to share updates.
-    call_to_action_name: View blog
-    call_to_action_link: /blog/
-
-  - title: Works with GitHub Pages
-    subtitle: Easy setup
-    icon: fa-github
+  - title: Worldwide measurements
+    #subtitle: Easy setup
+    icon: fa-solid fa-map-location-dot
     icon_brand: true
     description: >
-      Quick and easy setup using Jekyll and GitHub Pages.
-    call_to_action_name: Get started
+      MARKs are currently deployed in 6 different countries, and more are planned.
+    call_to_action_name: See locations
     call_to_action_link: /getting-started/
+
+  - title: Blog 
+    #subtitle: Publish content
+    icon: fa-envelope
+    description: >
+      Getting the newest information about MARK
+    call_to_action_name: See here
+    call_to_action_link: /blog/
+
