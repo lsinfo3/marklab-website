@@ -14,7 +14,7 @@ plugins:
 sass:
   style: compressed
 
-fixed_navbar: top
+#fixed_navbar: top
 footer_menu: footer
 
 collections:

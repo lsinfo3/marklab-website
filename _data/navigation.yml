@@ -1,13 +1,13 @@
 - title: Home
-  url: /
+  link: /
 - title: Platform
-  url: /platform/
+  link: /platform/
 - title: Locations
-  url: /locations/
+  link: /locations/
 - title: News
-  url: /blog/
+  link: /blog/
 - title: About
-  url: /about/
+  link: /about/
 
 
 
