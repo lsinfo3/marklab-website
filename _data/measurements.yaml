@@ -1,0 +1,15 @@
+- name: emnify-context
+  label: PDP emnify Context
+  type: background
+- name: exp-bricklet-voltage-current
+  label: Energy Current Voltage
+  type: background
+- name: exp-position-gps
+  label: GPS Tracker
+  type: background
+- name: exp-system-information
+  label: System Information
+  type: background
+- name: exp-temperature
+  label: Temperature CPU
+  type: background
