@@ -9,3 +9,5 @@ hero_darken: true
 show_sidebar: false
 menubar: menu
 ---
+
+{% include image-modal.html link='/assets/images/mark_übersichtsbild_website.png' alt="Mark Node" %}

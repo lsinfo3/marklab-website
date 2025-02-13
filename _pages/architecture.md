@@ -9,3 +9,5 @@ hero_darken: true
 show_sidebar: false
 menubar: menu
 ---
+
+{% include image-modal.html link='/assets/images/marklab_architekturbild_lang.png' alt="Marklab Architecture" %}
