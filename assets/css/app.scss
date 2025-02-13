@@ -1,12 +1,13 @@
 ---
 ---
 
-$primary: #3E4C73;
+$primary: #d87364;
 
 @import "main";
 
 .navbar {
-    background-color: #3E4C73 !important;
+    //background-color: #3E4C73 !important; 
+    background-color: #2e3447 !important;
 }
 
 // Make the "Welcome" title stay large
@@ -18,3 +19,5 @@ $primary: #3E4C73;
 .callouts .title {
     font-size: 1.5rem !important;
 }
+
+//#d87364
