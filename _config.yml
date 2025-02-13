@@ -14,3 +14,9 @@ plugins:
 sass:
   style: compressed
 
+footer_menu: footer
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/

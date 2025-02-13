@@ -8,5 +8,5 @@ hero_darken: true
 callouts: callouts
 ---
 
-# Hello, world!
-This is my website using Bulma on GitHub Pages.
+<!--# Hello, world!
+This is my website using Bulma on GitHub Pages.-->
