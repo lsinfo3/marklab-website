@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Marklab
+title: Purpose of Marklab
 #subtitle: Mark
-permalink: /platform/
+permalink: /purpose/
 hero_image: /marklab-website/assets/images/marklab_hero3.png
 #hero_height: is-fullwidth
 hero_darken: true
@@ -10,7 +10,6 @@ show_sidebar: false
 menubar: menu
 ---
 
-# Page 1 Content
-This is the content for Page 1.
+# Page 2 Content
+This is the content for Page 2.
 
-{% include image-modal.html ratio=is-square link='/assets/images/mark.png' alt="MARK" %}
