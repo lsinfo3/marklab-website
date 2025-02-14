@@ -52,6 +52,12 @@ Setting up a globally distributed measurement platform, is diffcult and needs th
 .accordion-header:hover {
     background-color: #f0f0f0;
 }
+
+.accordion-header span {
+    color: #2e3447;  /* Change to your desired color */
+    font-weight: bold;
+}
+
 </style>
 
 <script>

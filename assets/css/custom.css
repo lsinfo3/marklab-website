@@ -26,8 +26,3 @@
     flex-grow: 1;
     border-radius: 5px;
 }
-
-.accordion-header span {
-    color: #2e3447;  /* Change to your desired color */
-    font-weight: bold;
-}
