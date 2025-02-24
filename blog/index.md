@@ -8,7 +8,7 @@ hero_darken: true
 permalink: /blog/
 ---
 
-{% for post in site.posts %}
+<!--{% for post in site.posts %}
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   <p>{{ post.excerpt }}</p>
 {% endfor %}
@@ -22,4 +22,4 @@ permalink: /blog/
       <a href="{{ paginator.next_page_path }}" class="next">Next</a>
     {% endif %}
   </div>
-{% endif %}
+{% endif %}-->
