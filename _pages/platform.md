@@ -10,7 +10,4 @@ show_sidebar: false
 menubar: menu
 ---
 
-# Page 1 Content
-This is the content for Page 1.
-
 {% include image-modal.html ratio="is-half-size" link='/assets/images/mark_maskottchen.png' alt="MARK" %}

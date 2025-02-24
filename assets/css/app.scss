@@ -3,6 +3,7 @@
 
 $primary: #d87364;
 $link: #d87364;
+$info: #2e3447;
 
 .image.is-half-size {
     max-width: 50%;
@@ -24,7 +25,9 @@ $link: #d87364;
     font-size: 1.5rem !important;
 }
 
-
+.has-text-info {
+    color: #2e3447 !important;
+}
 
 @import "main";
 

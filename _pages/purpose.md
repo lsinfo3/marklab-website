@@ -10,6 +10,5 @@ show_sidebar: false
 menubar: menu
 ---
 
-# Page 2 Content
-This is the content for Page 2.
+{% include purpose.html %}
 
