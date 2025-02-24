@@ -26,3 +26,7 @@
     flex-grow: 1;
     border-radius: 5px;
 }
+
+a[href$="/marklab-website/feed.xml"] {
+    display: none;
+}
