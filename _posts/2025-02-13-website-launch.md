@@ -1,12 +1,11 @@
 ---
 layout: post
-title: The Blog Post Title
+title: Lauch of Website
 #subtitle: The blog post subtitle
-date: 2025-02-24
+date: 2025-02-13
 #categories: blog
 hero_image: /assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-# Halli
-Hallo
+# The Marklab Website is now available!
