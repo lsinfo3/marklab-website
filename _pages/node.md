@@ -10,13 +10,13 @@ show_sidebar: false
 menubar: menu
 ---
 
-# Modular Measurement Platform for Mobile Networks
+### Modular Measurement Platform for Mobile Networks
 
 {% include image-modal.html link='/assets/images/mark_übersichtsbild_website.png' alt="Mark Node" %}
 
 This image showcases our custom-built measurement platform, designed for evaluating mobile network performance across various technologies. The system is enclosed in a 3D-printed case and integrates multiple hardware components to enable precise and automated network experiments.
 
-## Key Components:
+#### Key Components:
 - Tinkerforge Modules:
     - GPS Bricklet – Provides accurate positioning and time synchronization using GPS, GLONASS, and Galileo.
     - Current/Voltage Bricklet – Monitors power consumption of connected devices.

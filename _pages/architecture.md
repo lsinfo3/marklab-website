@@ -11,13 +11,13 @@ menubar: menu
 ---
 
 
-# **System Architecture for Marklab**
+### **System Architecture for Marklab**
 
 {% include image-modal.html link='/assets/images/marklab_architekturbild_lang.png' alt="Marklab Architecture" %}
 
 This diagram illustrates the architecture of **Marklab**, designed to evaluate mobile network performance across different network components.
 
-## **System Components:**
+#### **System Components:**
 
 - **MARK (Measurement Node):**  
   - Equipped with **Teltonika TRM240 & TRM250** modems.  
@@ -37,7 +37,7 @@ This diagram illustrates the architecture of **Marklab**, designed to evaluate m
   - **Management Server:** Coordinates measurement tasks and device configurations.  
   - **SIM Provider:** Hosts multiple SIM profiles for flexible network testing.  
 
-## **Data Flow & Network Interaction:**
+#### **Data Flow & Network Interaction:**
 1. The **MARK** node connects to a visited network via **TRM240 (LTE Cat 1) or TRM250 (NB-IoT, LTE-M, 2G)**.  
 2. Traffic is processed by the **SGW** and forwarded via the **IPX backbone** to the home network.  
 3. The **PGW** handles data transfer between mobile networks and external systems.  
