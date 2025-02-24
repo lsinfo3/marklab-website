@@ -8,6 +8,6 @@ hero_image: /assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-# New Node in Milan
+### New Node in Milan
 
 The node in Milan is online and working.
