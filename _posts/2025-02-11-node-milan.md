@@ -10,4 +10,4 @@ hero_darken: true
 
 ### New Node in Milan
 
-The node in Milan is online and working.
+We're excited to announce that a new measurement node has been successfully deployed in Milan, Italy. This expansion strengthens our European coverage and will provide enhanced data insights for the region. The node is now fully operational and contributing to our global infrastructure.
