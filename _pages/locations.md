@@ -33,9 +33,16 @@ hero_darken: true
           { lat: 63.43054077399492, lon: 10.395076455285725, name: "Trondheim, Norway", status: "Active" },
           { lat: 45.81512621395278, lon: 15.981975001057377, name: "Zagreb, Croatia", status: "Active" }, 
           { lat: 45.468426594164924, lon: 9.190887769941973, name: "Milan, Italy", status: "Active" },
+          { lat: 40.12909034903276, lon: 9.003508650660718, name: "Sardinia, Italy", status: "Active" },
           { lat: 40.41592488814913, lon: -3.697665266617252, name: "Madrid, Spain", status: "Active" },
           { lat: 47.14106267433893, lon: 8.429255642694061, name: "Lucerne, Switzerland", status: "Active" },
-          { lat: -8.478312628480555, lon: -54.89392071546018, name: "Brasil", status: "Planned" }
+          { lat: 51.10931014256227, lon: 17.03434944281905, name: "Wrocław, Poland", status: "Active" },
+          { lat: 52.229943242940216, lon: 21.00854120242006, name: "Warsaw, Poland", status: "Planned" },
+          { lat: 48.857699237086486, lon: 2.351666038520643, name: "Paris, France", status: "Planned" },
+          { lat: 41.157444996101894, lon: -8.62904082950535, name: "Porto, Portugal", status: "Active" },
+          { lat: 60.17030798072441, lon: 24.930068920730672, name: "Helsinki, Finland", status: "Planned" },
+          { lat: 39.75132951091126, lon: -101.41992588683895, name: "USA", status: "Planned" },
+          { lat: -8.478312628480555, lon: -54.89392071546018, name: "Brazil", status: "Planned" }
       ];
 
       // Status-based icons
