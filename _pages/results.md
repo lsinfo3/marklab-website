@@ -11,7 +11,7 @@ hero_darken: true
 ### Results in the context of  MARKlab 
 
 * **[Paper]** Vomhoff, V., Raffeck, S., Gebert, S., Geissler, S., & Hossfeld, T. (2023, May). Nb-iot vs. lte-m: Measurement study of the energy consumption of lpwan technologies. In 2023 IEEE International Conference on Communications Workshops (ICC Workshops) (pp. 403-408). IEEE.
-* **[Dataset]** Viktoria Vomhoff, Simon Raffeck, Steffen Gebert, Stefan Geißler, & Tobias Hoßfeld. (2023). NB-IoT vs. LTE-M: Measurement Data of the Energy Consumption of LPWAN Technologies [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7603641
+* **[Dataset]** Vomhoff, V., Raffeck, S., Gebert, S., Geißler, S., & Hoßfeld, T. (2023). NB-IoT vs. LTE-M: Measurement Data of the Energy Consumption of LPWAN Technologies [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7603641
   <br>
   <br>
 * **[Paper]** Vomhoff, V., Sichermann, M., Geißler, S., Lutu, A., Giess, M., & Hoßfeld, T. (2024, May). A shortcut through the ipx: Measuring latencies in global mobile roaming with regional breakouts. In 2024 8th Network Traffic Measurement and Analysis Conference (TMA) (pp. 1-10). IEEE.
