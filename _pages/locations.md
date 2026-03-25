@@ -40,7 +40,7 @@ hero_darken: true
           { lat: 52.229943242940216, lon: 21.00854120242006, name: "Warsaw, Poland", status: "Planned" },
           { lat: 48.857699237086486, lon: 2.351666038520643, name: "Paris, France", status: "Planned" },
           { lat: 41.157444996101894, lon: -8.62904082950535, name: "Porto, Portugal", status: "Active" },
-          { lat: 60.17030798072441, lon: 24.930068920730672, name: "Helsinki, Finland", status: "Planned" },
+          { lat: 60.17030798072441, lon: 24.930068920730672, name: "Helsinki, Finland", status: "Active" },
           { lat: 39.75132951091126, lon: -101.41992588683895, name: "USA", status: "Planned" },
           { lat: -8.478312628480555, lon: -54.89392071546018, name: "Brazil", status: "Planned" }
       ];
