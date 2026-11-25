@@ -7,9 +7,9 @@ menubar: menu
 ---
 ## Containerised experiments
 
-MARKlab combines predefined measurement tasks with custom Docker-based experiments. A job defines the cellular configuration, measurement target, and task sequence. The available hardware and local networks constrain which experiments can run at each location.
+MARKlab combines predefined measurement tasks with custom Docker-based experiments. A job defines the cellular configuration, measurement target, and task sequence. Which experiments can run at a location depends on its hardware and available mobile networks.
 
-## Three task lifecycles
+## When tasks run
 
 | Task category | When it runs | Typical purpose |
 | --- | --- | --- |
@@ -19,22 +19,22 @@ MARKlab combines predefined measurement tasks with custom Docker-based experimen
 
 ## Documented measurement tasks
 
-The platform papers describe the following tasks. This is a research capability overview; the exact container set and compatibility for a new campaign should be confirmed with the team.
+The platform papers describe the following tasks. Contact us to check which tasks are available for your planned measurements.
 
 <div class="table-scroll" role="region" aria-label="Measurement task catalogue" tabindex="0">
 <table>
-<thead><tr><th scope="col">Task</th><th scope="col">Category</th><th scope="col">What it observes or does</th></tr></thead>
+<thead><tr><th scope="col">Task</th><th scope="col">Category</th><th scope="col">Description</th></tr></thead>
 <tbody>{% for task in site.data.measurements %}
 <tr><td>{{ task.label }}</td><td>{{ task.type }}</td><td>{{ task.description }}</td></tr>
 {% endfor %}</tbody>
 </table>
 </div>
 
-## Choose the method for the question
+## Choosing a measurement method
 
 Different probing protocols can produce different absolute latency values, even when their trends are related. A measurement campaign should specify the probe method, packet timing, target, radio configuration, SIM, and routing conditions.
 
-The 2026 **Measuring the Measurers** study evaluates measurement reliability and validity for RTT in a controlled LTE roaming setup. Its findings should not be treated as validation of every metric, radio technology, or deployment. [Explore the study and dataset]({{ '/results/#measurement-reliability-2026' | relative_url }}).
+The 2026 **Measuring the Measurers** study evaluates measurement reliability and validity for RTT in a controlled LTE roaming setup. The evaluation covers mean RTT in that setup. [Read the study and download the data]({{ '/results/#measurement-reliability-2026' | relative_url }}).
 
 ## Plan a campaign
 

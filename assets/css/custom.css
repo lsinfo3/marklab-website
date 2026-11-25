@@ -383,3 +383,67 @@ gap:10px}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 }
+
+/* Research projects and their two partners. */
+.project-partners {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 28px 0 40px;
+}
+.project-partner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .95rem;
+}
+.project-partner:hover {
+  border-color: var(--coral-dark);
+}
+.project-partner img {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+  margin: 40px 0 26px;
+}
+.project-heading h2 {
+  margin: 0 0 14px;
+}
+.project-heading p {
+  margin: 0;
+}
+.project-logo {
+  width: 230px;
+  height: 130px;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .project-partners {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .project-partner {
+    padding: 18px;
+    gap: 16px;
+  }
+  .project-heading {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .project-logo {
+    max-width: 100%;
+  }
+}

@@ -2,29 +2,29 @@
 layout: page
 title: The MARKlab platform
 section: Research
-description: Remotely orchestrated experiments in public cellular networks, built around dedicated hardware and containerised measurements.
+description: Run experiments in public cellular networks using remotely managed nodes and containerised measurement tasks.
 permalink: /platform/
 menubar: menu
 ---
-## From a research question to a real network
+## About the platform
 
 MARKlab is a distributed measurement platform developed at the Chair of Communication Networks, University of Würzburg. Dedicated nodes, called **MARKs**, execute experiments in public mobile networks and return measurement data to a central backend.
 
-MARK stands for **Multi-RAT Autonomous MeasuRement FrameworK**. The platform combines comparable hardware, remote SIM provisioning, central orchestration, and Docker-based measurement tasks to support repeatable research outside the laboratory.
+MARK stands for **Multi-RAT Autonomous MeasuRement FrameworK**. Nodes use comparable hardware and Docker-based measurement tasks. Experiments are scheduled centrally, and SIMs can be assigned remotely.
 
 ## What you can investigate
 
 - **Quality of service:** latency, packet loss, throughput, signal conditions, and the differences between operators and locations.
-- **Energy consumption:** current and voltage observations alongside network measurements, supporting analysis of IoT connectivity costs.
+- **Energy consumption:** current and voltage recordings to measure the energy used by IoT devices during communication.
 - **Roaming:** the relationship between a visited network, home-network routing, and end-to-end performance.
 - **Application behaviour:** containerised experiments against controlled application endpoints or other Internet targets.
-- **Measurement methodology:** reliability and validity of measurement tools under explicitly stated experimental conditions.
+- **Measurement methodology:** whether measurement tools give consistent results and measure the intended network property.
 
 ## Available hardware
 
 The original MARK combines Teltonika TRM240 and TRM250 modems for IoT-focused cellular measurements. Two additional **5G variants, based on RG520N-EB and RM520N-GL modems, are operational**. Actual radio technology availability depends on the deployed node, modem variant, operator, and local network.
 
-The **mobility node remains under development**. It explores cellular management connectivity and battery-backed operation for experiments on the move. It is separate from the stationary hosting configurations.
+The **mobility node remains under development**. It uses a separate cellular management connection and battery power for measurements on the move.
 
 [Compare node variants]({{ '/node/' | relative_url }}).
 
@@ -37,12 +37,12 @@ The **mobility node remains under development**. It explores cellular management
 
 [Explore measurement tasks]({{ '/measurements/' | relative_url }}) or [read about the architecture]({{ '/architecture/' | relative_url }}).
 
-## Start with the research
+## Publications and source code
 
-[Publications and datasets]({{ '/results/' | relative_url }}) document published studies and their experimental scope. The [open-source platform repository](https://github.com/lsinfo3/marklab) contains software and construction resources.
+[Publications and datasets]({{ '/results/' | relative_url }}) describe our studies and provide the data collected in them. The [open-source platform repository](https://github.com/lsinfo3/marklab) contains software and construction resources.
 
-To discuss experiments or a research collaboration, contact [{{ site.email }}](mailto:{{ site.email }}). Access and scheduling are coordinated with the team.
+To discuss experiments or a research collaboration, contact [{{ site.email }}](mailto:{{ site.email }}). We arrange access and experiment schedules with you.
 
-## Contribute a location
+## Host a node
 
-Hosting a node gives MARKlab another perspective on real cellular networks. [Read the hosting requirements and download the setup guides]({{ '/host/' | relative_url }}).
+Hosting a node lets us run measurements at your location. [Read the hosting requirements and download the setup guides]({{ '/host/' | relative_url }}).

@@ -2,10 +2,10 @@ style: is-light
 items:
   - title: Research in real cellular networks
     description: Investigate network performance, roaming, and energy consumption.
-    call_to_action_name: Explore MARKlab
+    call_to_action_name: About the platform
     call_to_action_link: /platform/
   - title: International deployments
-    description: Explore the current deployment inventory and planned locations.
+    description: See where nodes are deployed and where we plan to add them.
     call_to_action_name: See locations
     call_to_action_link: /locations/
   - title: Host a MARK node

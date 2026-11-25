@@ -28,7 +28,7 @@ The output goes to `_site/` and is ignored by Git. The deployment URL and base p
 - `_pages/host.md` contains host requirements and setup instructions. `assets/manuals/` holds copies of the supplied PDFs; replace them when the source manuals change and update the guide dates.
 - `_pages/node.md` distinguishes operational stationary nodes from the mobility node under development. Do not infer that each location supports 5G.
 - `_pages/results.md` lists research and datasets. Keep historical campaign counts separate from the current deployment inventory.
-- `_posts/` contains dated news articles. All posts appear on `/blog/`; there is no pagination. Existing article URLs are preserved. The four articles dated 25 November 2026 are proposed local copy for review; they describe the confirmed status on that date, not installation or conference dates.
+- `_posts/` contains dated news articles. All posts appear on `/blog/`; there is no pagination. Existing article URLs are preserved. The news articles introduced in the website refresh are proposed copy for review. Their publication dates are maintained in the post filenames and front matter.
 - `_layouts/`, `_includes/image-modal.html`, and `assets/css/custom.css` define the presentation. `assets/js/locations.js` draws the map.
 
 ## Host details to confirm

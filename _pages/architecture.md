@@ -5,13 +5,13 @@ section: Platform
 permalink: /architecture/
 menubar: menu
 ---
-## Two connections, different roles
+## Management and measurement traffic
 
-Stationary MARK nodes use **Ethernet for management** and **cellular interfaces for measurement traffic**. This separates experiment traffic from the host institution's local network. The mobility extension is exploring a separate cellular management connection and remains under development.
+Stationary MARK nodes use **Ethernet for management** and **cellular interfaces for measurement traffic**. This separates experiment traffic from the host institution's local network. The mobility node, currently under development, uses a separate modem for management.
 
 {% include image-modal.html link='/assets/images/marklab_architekturbild_lang.png' alt="Original MARKlab architecture: measurement nodes, visited and home mobile networks, and the central research backend" %}
 
-The diagram illustrates the original stationary-node configuration and a home-routed roaming path. It is not a complete 5G core-network diagram or a representation of every supported connectivity scenario.
+The diagram shows the original stationary node and the traffic path for home-routed roaming.
 
 ## The measurement node
 
@@ -30,11 +30,11 @@ The SIM provisioning service in the research platform is distinct from the mobil
 
 In a home-routed roaming configuration, a node connects to the radio access network of a visited operator. Traffic passes through the inter-operator IP exchange and the home network's gateway before reaching its Internet target. This path can influence the measured latency and throughput.
 
-Roaming is an experimental configuration, not a requirement of the platform. The [published studies]({{ '/results/' | relative_url }}) describe their SIMs, routing, targets, and radio technologies so that results can be interpreted within that scope.
+MARKlab supports both roaming and local SIMs. The [published studies]({{ '/results/' | relative_url }}) describe the SIMs, routing, targets, and radio technologies used in each experiment.
 
 ## Repeatable execution
 
-Containerised tasks follow a defined job lifecycle. Active measurements run sequentially to avoid interference; background tasks observe the relevant phases of a connection. [See the measurement model]({{ '/measurements/' | relative_url }}).
+Active measurement tasks run one after another to avoid interference. Background tasks record data during connection setup, measurement, or teardown, depending on the task. [See the measurement model]({{ '/measurements/' | relative_url }}).
 
 ## Information for hosts
 

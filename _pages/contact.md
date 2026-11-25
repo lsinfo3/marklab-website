@@ -9,11 +9,11 @@ Email **[{{ site.email }}](mailto:{{ site.email }})** for research enquiries, ho
 
 ## Research collaboration
 
-Tell us about your research question, the radio technologies or locations of interest, and your measurement requirements. We can discuss experiment suitability and access with you.
+Tell us about your research question, the radio technologies or locations of interest, and your measurement requirements. We can help you work out which experiments are possible and arrange access.
 
 ## Hosting a node
 
-Please include your city and country, institution if applicable, and the available location, power, and network connection. [Hosting requirements, setup instructions, and all three node manuals]({{ '/host/' | relative_url }}) are available on the hosting page.
+Please include your city and country, institution if applicable, and where you could place the node and what power and network connections are available. [Hosting requirements, setup instructions, and all three node manuals]({{ '/host/' | relative_url }}) are available on the hosting page.
 
 ## Existing hosts
 

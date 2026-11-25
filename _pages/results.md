@@ -2,19 +2,19 @@
 layout: page
 title: Publications and data
 section: Research
-description: Research using MARKlab, with links to published studies, supporting data, and their experimental scope.
+description: Papers about MARKlab and the measurements collected with it, with links to datasets.
 permalink: /results/
 ---
-## Research you can build on
+## Studies and datasets
 
-MARKlab publications describe the platform, individual measurement campaigns, and methods for interpreting their results. Dataset links below lead to the research repositories. Campaign node counts and locations are historical snapshots, not the [current deployment inventory]({{ '/locations/' | relative_url }}).
+Here you can find papers about MARKlab and the measurements collected with it, along with links to the datasets. Each paper describes the nodes and locations used for its study. For today’s deployments, see [Locations]({{ '/locations/' | relative_url }}).
 
 ## Measurement reliability, 2026
 
 **Measuring the Measurers: An Evaluation of Reliability and Validity in Cellular Measurements**
 Viktoria Vomhoff, Frank Loh, Steffen Gebert, Tobias Hoßfeld, Stefan Geißler. TMA 2026.
 
-The study evaluates the consistency and validity of active RTT measurements under a controlled LTE roaming configuration. It distinguishes measurement-method effects from network variation; its scope does not extend to every metric or hardware configuration.
+The study evaluates the consistency and validity of active RTT measurements under a controlled LTE roaming configuration. It examines how the probing method and network conditions affect mean RTT.
 
 [Conference paper listing](https://tma.ifip.org/2026/accepted-papers/) · [Dataset: DOI 10.5281/zenodo.20327527](https://doi.org/10.5281/zenodo.20327527)
 
@@ -23,7 +23,7 @@ The study evaluates the consistency and validity of active RTT measurements unde
 **MARKlab Mobility Extension: Measuring the Impact of Mobility on Cellular IoT Connectivity**
 Viktoria Vomhoff, Nikolas Finke, Stefan Geissler, Steffen Gebert, Tobias Hossfeld.
 
-The work explores a mobility-enabled node and measurements of latency, signal conditions, and energy consumption around handovers. **The mobility node remains under development.**
+The paper describes a mobile node and measurements of latency, signal conditions, and energy consumption during handovers. **The mobility node remains under development.**
 
 [30th Mobilkommunikationstagung programme](https://www.hs-osnabrueck.de/homepages/homepages-iui/fachtagung-mobilkommunikation/vortraege-der-30-mkt/) · [Contact the team about this work]({{ '/contact/' | relative_url }})
 

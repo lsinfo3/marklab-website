@@ -8,4 +8,4 @@ hero_image: /marklab-website/assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-We’ve added another key location to our network: Lucerne, Switzerland. The new node is now online and collecting valuable measurement data. This addition helps us improve geographic diversity and data quality across central Europe.
+A new MARK node in Lucerne, Switzerland, is online and collecting mobile network measurements.

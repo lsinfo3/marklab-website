@@ -5,12 +5,8 @@ date: 2026-11-25 11:00:00 +0100
 author: MARKlab team
 ---
 
-Both 5G MARK node variants are operational: the RG520N-EB configuration and the RM520N-GL configuration. Setup guides for both are now available alongside the original MARK manual.
+Both 5G MARK variants are now operational: one uses an RG520N-EB modem, the other an RM520N-GL. Setup guides for both are available on the website.
 
-Each 5G configuration combines its 5G modem with a BG96 modem. For hosts, the important differences from the original node are the antenna arrangement and power connection: four antennas for the 5G modem, one BG96 antenna, one GPS antenna, and an IEC power connection. Ethernet provides management connectivity.
+Each version also includes a BG96 modem. Compared with the original MARK, the main setup differences are the antennas and power connection: four antennas for the 5G modem, one BG96 antenna, one GPS antenna, and an IEC power connection. Both versions use Ethernet for management.
 
-The two variants expand the platform's measurement hardware. Available technologies and bands still depend on the node, local operator, and SIM configuration. This update does not imply that every MARKlab location has a 5G node.
-
-[Compare the node variants]({{ '/node/' | relative_url }}) or [download the matching setup guide]({{ '/host/#setup-guides' | relative_url }}).
-
-The mobility node is a separate development and remains under development.
+[Compare the node variants]({{ '/node/' | relative_url }}) or [download the setup guide for your node]({{ '/host/#setup-guides' | relative_url }}). Contact us to check which locations have the hardware needed for your measurements.

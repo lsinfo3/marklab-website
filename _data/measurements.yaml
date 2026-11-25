@@ -21,7 +21,7 @@
   description: "Network state and route information"
 - label: "Current / voltage"
   type: B
-  description: "Electrical observations for energy analysis"
+  description: "Current and voltage recordings for energy analysis"
 - label: "GPS tracker"
   type: B
   description: "Node position"

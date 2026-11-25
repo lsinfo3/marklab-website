@@ -8,4 +8,4 @@ hero_image: /marklab-website/assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-We’ve added another key location to our network: Wrocław, Poland. The new node is now online and collecting measurement data. 
+Our new MARK node in Wrocław, Poland, is online and collecting mobile network measurements.

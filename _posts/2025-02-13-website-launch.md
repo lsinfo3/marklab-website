@@ -8,4 +8,4 @@ hero_image: /marklab-website/assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-We're pleased to share that our official website is now online! Explore the platform to learn more about our mission, data initiatives, and latest developments. We’ll continue to update the site with fresh content, news, and resources.
+The MARKlab website is online. You can find information about the platform, node locations, and our research, along with news and contact details.

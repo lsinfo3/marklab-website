@@ -8,4 +8,4 @@ hero_image: /marklab-website/assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-We're excited to announce that a new measurement node has been successfully deployed in Milan, Italy. This expansion strengthens our European coverage and will provide enhanced data insights for the region. The node is now fully operational and contributing to our global infrastructure.
+We have installed a MARK measurement node in Milan, Italy. It is online and running measurements in the local mobile networks.
