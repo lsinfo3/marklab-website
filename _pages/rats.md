@@ -1,33 +1,28 @@
 ---
 layout: page
-title: RAT Types
-#subtitle: Mark
+title: Radio technologies
+section: Platform
 permalink: /rats/
-hero_image: /marklab-website/assets/images/marklab_hero3.png
-#hero_height: is-fullwidth
-hero_darken: true
-show_sidebar: false
 menubar: menu
 ---
+## Match the technology to the experiment
 
-## Comparison of 2G, 3G, LTE Cat-1, LTE-M, and NB-IoT  
+MARKlab studies cellular connectivity with IoT-focused modems and operational 5G node variants. A technology's availability depends on the node, modem bands, SIM configuration, roaming agreements, and local operator deployment.
 
-A brief overview of different mobile network technologies used in IoT and mobile communications.
+| Technology | Research context |
+| --- | --- |
+| Legacy 2G / 3G | Historical and legacy connectivity comparisons where compatible hardware and network service remain available |
+| LTE Cat-1 | LTE connectivity for IoT performance and energy studies |
+| LTE-M | Cellular IoT connectivity, including performance, energy, and mobility-related questions |
+| NB-IoT | Narrowband IoT connectivity and its performance/energy trade-offs |
+| 5G NR | Measurements using the operational RG520N-EB and RM520N-GL node variants |
 
-### Overview  
+These are research contexts, not a guarantee that every node can attach to every listed technology. [Contact the team]({{ '/contact/' | relative_url }}) for availability at a particular location.
 
-- **2G (GSM/GPRS/EDGE)**: One of the earliest mobile communication technologies, designed primarily for voice calls and basic data transfer. It has low data rates and high power consumption.  
-- **3G (UMTS/HSPA)**: Introduced higher data speeds, supporting mobile internet and video streaming. However, it consumes more power than later LTE-based technologies.  
-- **LTE Cat-1**: A 4G technology that supports both voice and data transmission with decent power efficiency. It is widely used in IoT applications requiring continuous connectivity.  
-- **LTE-M (LTE Cat-M1)**: Designed for IoT applications, LTE-M offers low power consumption, good indoor penetration, and moderate data rates. It supports mobility and voice over LTE (VoLTE).  
-- **NB-IoT (Narrowband IoT)**: Ultra-low-power technology designed for stationary IoT devices, such as smart meters and sensors. It has limited bandwidth but excellent coverage and battery life.  
+## Specifications are not measured performance
 
-### Comparison Table  
+Peak data rates and example latency values do not describe what a particular deployment will achieve. Radio conditions, network configuration, protocol, and routing can have substantial effects. MARKlab's [publications and datasets]({{ '/results/' | relative_url }}) report observations within their stated experimental scope.
 
-| Technology  | Uplink Speed | Downlink Speed | Latency       |  
-|------------|-------------|---------------|--------------|  
-| 2G (EDGE)  | ~240 kbps    | ~300 kbps      | High (~500ms) |  
-| 3G (DC-HSPA+)  | ~8 Mbps     | ~42 Mbps      | Moderate (~100ms) |  
-| LTE Cat-1  | ~5 Mbps     | ~10 Mbps      | Low (~50ms) |  
-| LTE-M      | ~375 kbps     | ~375 kbps       | Low (~50ms) |  
-| NB-IoT     | ~66 kbps    | ~26 kbps     | High (~1s) |  
+## Hardware and deployment information
+
+[Compare node variants]({{ '/node/' | relative_url }}), [explore locations]({{ '/locations/' | relative_url }}), or [read the hosting setup guides]({{ '/host/' | relative_url }}).

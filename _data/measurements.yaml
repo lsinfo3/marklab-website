@@ -1,15 +1,39 @@
-- name: emnify-context
-  label: PDP emnify Context
-  type: background
-- name: exp-bricklet-voltage-current
-  label: Energy Current Voltage
-  type: background
-- name: exp-position-gps
-  label: GPS Tracker
-  type: background
-- name: exp-system-information
-  label: System Information
-  type: background
-- name: exp-temperature
-  label: Temperature CPU
-  type: background
+- label: "Ping delay"
+  type: M
+  description: "ICMP round-trip delay"
+- label: "TCP ping delay"
+  type: M
+  description: "Delay using TCP connection-establishment exchanges"
+- label: "UDP / DNS ping delay"
+  type: M
+  description: "Delay to a compatible UDP endpoint or DNS server"
+- label: "Curl download / upload"
+  type: M
+  description: "Transfers for throughput analysis"
+- label: "AT Commander"
+  type: M
+  description: "Modem queries and control through AT commands"
+- label: "Get IP address"
+  type: M
+  description: "Public IP address of the measurement connection"
+- label: "Network report / traceroute"
+  type: M
+  description: "Network state and route information"
+- label: "Current / voltage"
+  type: B
+  description: "Electrical observations for energy analysis"
+- label: "GPS tracker"
+  type: B
+  description: "Node position"
+- label: "System information / CPU temperature"
+  type: B
+  description: "Controller telemetry"
+- label: "QCSuper"
+  type: B
+  description: "Radio diagnostic capture on compatible 2G/3G/4G hardware"
+- label: "Packet capture"
+  type: EB
+  description: "Network packets for trace analysis"
+- label: "Signal strength"
+  type: EB
+  description: "Modem-reported RSSI and channel bit error rate"

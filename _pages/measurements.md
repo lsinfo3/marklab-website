@@ -1,125 +1,41 @@
 ---
 layout: page
-title: Measurements
-#subtitle: Mark
+title: Measurements and experiments
+section: Platform
 permalink: /measurements/
-hero_image: /marklab-website/assets/images/marklab_hero3.png
-#hero_height: is-fullwidth
-hero_darken: true
-show_sidebar: false
 menubar: menu
 ---
+## Containerised experiments
 
-With the platform we are able to measure predefined measurements mostly for QoS measurements and energy consumption but due to our setup, Docker container with custom measurements configs can be uploaded. Currently, there are three types of measurements:
-1. A **Measurement Task** is an active measurement to measure for example network performance after a connection to a mobile operator is established. Measurement tasks cannot run parallel and are always handled sequentially.
-2. A **Background Task** is a measurement that runs in a background, parallel to a measurement task and starts before a connection to a mobile operator is established, and ends after the connection is closed, useful for example for energy measurements. Multiple background tasks can run in parallel.
-3. An **Enhanced Background Task** is a combination of the measurement types above. It starts after a connection to a mobile operator is established, and multiple enhanced background tasks can run in parallel. It is useful for example for a tcpdump measurement.
+MARKlab combines predefined measurement tasks with custom Docker-based experiments. A job defines the cellular configuration, measurement target, and task sequence. The available hardware and local networks constrain which experiments can run at each location.
 
-The predefined measurements are currently the following:
+## Three task lifecycles
 
-<table class="table is-striped is-hoverable is-fullwidth">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!--<tr>
-      <td>PDP emnify Context</td>
-      <td>Background Task</td>
-      <td>Handles PDP context for emnify connectivity</td>
-    </tr>-->
-    <tr>
-      <td>Energy Current Voltage</td>
-      <td>Background Task</td>
-      <td>Measures energy and voltage levels of the selected device</td>
-    </tr>
-    <tr>
-      <td>GPS Tracker</td>
-      <td>Background Task</td>
-      <td>Tracks the GPS position of the node</td>
-    </tr>
-    <tr>
-      <td>System Information</td>
-      <td>Background Task</td>
-      <td>Collects system-related information and metrics</td>
-    </tr>
-    <tr>
-      <td>Temperature CPU</td>
-      <td>Background Task</td>
-      <td>Monitors the CPU temperature of the Raspberry Pi</td>
-    </tr>
-    <tr>
-      <td>tcpdump</td>
-      <td>Enhanced Background Task</td>
-      <td>Captures network packets for analysis</td>
-    </tr>
-    <tr>
-      <td>AT Commander</td>
-      <td>Measurement Task</td>
-      <td>Sends AT commands to the modem</td>
-    </tr>
-    <tr>
-      <td>fPing</td>
-      <td>Measurement Task</td>
-      <td>Measures network latency using fPing</td>
-    </tr>
-    <tr>
-      <td>hPing</td>
-      <td>Measurement Task</td>
-      <td>Measures network latency using hPing</td>
-    </tr>
-    <tr>
-      <td>Ping</td>
-      <td>Measurement Task</td>
-      <td>Measures ICMP ping delay</td>
-    </tr>
-    <tr>
-      <td>Curl Download</td>
-      <td>Measurement Task</td>
-      <td>Downloads a file using Curl to measure network speed</td>
-    </tr>
-    <tr>
-      <td>Network Report</td>
-      <td>Measurement Task</td>
-      <td>Generates a report of network conditions</td>
-    </tr>
-    <tr>
-      <td>Traceroute Route</td>
-      <td>Measurement Task</td>
-      <td>Traces network route to a target destination</td>
-    </tr>
-    <tr>
-      <td>Signal Quality</td>
-      <td>Measurement Task</td>
-      <td>Measures and reports network signal strength</td>
-    </tr>
-    <tr>
-      <td>Curl Upload</td>
-      <td>Measurement Task</td>
-      <td>Uploads a file using Curl to test upload speed</td>
-    </tr>
-    <tr>
-      <td>Get IP Address</td>
-      <td>Measurement Task</td>
-      <td>Retrieves and displays the device's public IP address</td>
-    </tr>
-  </tbody>
+| Task category | When it runs | Typical purpose |
+| --- | --- | --- |
+| Measurement task (M) | After connection establishment; active tasks execute sequentially | Latency probes, transfers, and modem queries |
+| Background task (B) | Before connection setup until after teardown; tasks may run in parallel | Current/voltage recording, GPS, and system telemetry |
+| Enhanced background task (EB) | After connection establishment; alongside active tasks | Packet capture and continuous signal monitoring |
+
+## Documented measurement tasks
+
+The platform papers describe the following tasks. This is a research capability overview; the exact container set and compatibility for a new campaign should be confirmed with the team.
+
+<div class="table-scroll" role="region" aria-label="Measurement task catalogue" tabindex="0">
+<table>
+<thead><tr><th scope="col">Task</th><th scope="col">Category</th><th scope="col">What it observes or does</th></tr></thead>
+<tbody>{% for task in site.data.measurements %}
+<tr><td>{{ task.label }}</td><td>{{ task.type }}</td><td>{{ task.description }}</td></tr>
+{% endfor %}</tbody>
 </table>
+</div>
 
+## Choose the method for the question
 
-<!--<div class="columns is-multiline">
-  {% for task in site.data.measurements %}
-  <div class="column is-one-third">
-    <div class="card">
-      <div class="card-content">
-        <p class="title">{{ task.label }}</p>
-        <p class="subtitle">{{ task.name }}</p>
-        <span class="tag is-info">{{ task.type }}</span>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>-->
+Different probing protocols can produce different absolute latency values, even when their trends are related. A measurement campaign should specify the probe method, packet timing, target, radio configuration, SIM, and routing conditions.
+
+The 2026 **Measuring the Measurers** study evaluates measurement reliability and validity for RTT in a controlled LTE roaming setup. Its findings should not be treated as validation of every metric, radio technology, or deployment. [Explore the study and dataset]({{ '/results/#measurement-reliability-2026' | relative_url }}).
+
+## Plan a campaign
+
+Contact [{{ site.email }}](mailto:{{ site.email }}) with your research question, required locations and technologies, target endpoints, and intended measurements. Custom measurement containers need to follow the platform's execution interface.

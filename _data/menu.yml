@@ -1,13 +1,14 @@
 - label: Platform
   items:
-    - name: Purpose
+    - name: Overview
+      link: /platform/
+    - name: Research purpose
       link: /purpose/
     - name: Architecture
       link: /architecture/
-    - name: Node
+    - name: Node variants
       link: /node/
     - name: Measurements
       link: /measurements/
-    - name: RAT Types
+    - name: Radio technologies
       link: /rats/
-

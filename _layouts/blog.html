@@ -1,0 +1,12 @@
+---
+layout: page
+---
+{{ content }}
+<div class="news-list">
+{% for post in site.posts %}
+  <article class="news-item">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time>
+    <div><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><div>{{ post.excerpt }}</div><a href="{{ post.url | relative_url }}">Read article</a></div>
+  </article>
+{% endfor %}
+</div>

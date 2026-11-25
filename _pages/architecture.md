@@ -1,46 +1,41 @@
 ---
 layout: page
-title: Architecture
-#subtitle: Mark
+title: System architecture
+section: Platform
 permalink: /architecture/
-hero_image: /marklab-website/assets/images/marklab_hero3.png
-#hero_height: is-fullwidth
-hero_darken: true
-show_sidebar: false
 menubar: menu
 ---
+## Two connections, different roles
 
+Stationary MARK nodes use **Ethernet for management** and **cellular interfaces for measurement traffic**. This separates experiment traffic from the host institution's local network. The mobility extension is exploring a separate cellular management connection and remains under development.
 
-### **System Architecture for Marklab**
+{% include image-modal.html link='/assets/images/marklab_architekturbild_lang.png' alt="Original MARKlab architecture: measurement nodes, visited and home mobile networks, and the central research backend" %}
 
-{% include image-modal.html link='/assets/images/marklab_architekturbild_lang.png' alt="Marklab Architecture" %}
+The diagram illustrates the original stationary-node configuration and a home-routed roaming path. It is not a complete 5G core-network diagram or a representation of every supported connectivity scenario.
 
-This diagram illustrates the architecture of **Marklab**, designed to evaluate mobile network performance across different network components.
+## The measurement node
 
-#### **System Components:**
+A MARK runs measurement containers, configures cellular connectivity, collects telemetry, and transfers results. The [hardware variants]({{ '/node/' | relative_url }}) include the original IoT-focused node and two operational 5G configurations.
 
-- **MARK (Measurement Node):**  
-  - Equipped with **Teltonika TRM240 & TRM250** modems.  
-  - Connects to the network via **Ethernet** for management purposes and cellular connectivity for measurements.  
+## The central backend
 
-- **Visited Network (Foreign Mobile Network):**  
-  - The modems attach to the **Radio Access Network (RAN)**.  
-  - Traffic is routed through the **Serving Gateway (SGW)**.  
+- **Management server:** experiment configuration, scheduling, an automation API, user interface, and result storage.
+- **VPN server:** encrypted management connectivity between deployed nodes and the backend.
+- **SIM provisioning service:** SIM cards hosted centrally can be assigned to remote nodes through SIM tunnelling, avoiding a physical SIM change at each deployment.
+- **Application server:** controlled endpoints for protocols such as MQTT, CoAP, AMQP, XMPP, and HTTP, with optional server-side observations. Experiments may also use other reachable Internet targets.
 
-- **Home Network (Core Network of the SIM Provider):**  
-  - Data is forwarded through the **IPX** (Interconnect Packet Exchange).  
-  - Reaches the **Packet Gateway (PGW)**, which interfaces with external networks.  
+The SIM provisioning service in the research platform is distinct from the mobile operator's home network and core infrastructure.
 
-- **University of Würzburg (Measurement & Control Backend):**  
-  - **Application Server:** Handles experiment execution and data collection.  
-  - **VPN Server:** Secures remote access to the measurement node.  
-  - **Management Server:** Coordinates measurement tasks and device configurations.  
-  - **SIM Provider:** Hosts multiple SIM profiles for flexible network testing.  
+## A roaming measurement path
 
-#### **Data Flow & Network Interaction:**
-1. The **MARK** node connects to a visited network via **TRM240 (LTE Cat 1) or TRM250 (NB-IoT, LTE-M, 2G)**.  
-2. Traffic is processed by the **SGW** and forwarded via the **IPX backbone** to the home network.  
-3. The **PGW** handles data transfer between mobile networks and external systems.  
-4. Measurement results are collected and analyzed at the **University of Würzburg backend**.  
+In a home-routed roaming configuration, a node connects to the radio access network of a visited operator. Traffic passes through the inter-operator IP exchange and the home network's gateway before reaching its Internet target. This path can influence the measured latency and throughput.
 
-This modular system enables comprehensive **QoS analysis, latency measurements, throughput testing, and SIM-based network evaluations**.
+Roaming is an experimental configuration, not a requirement of the platform. The [published studies]({{ '/results/' | relative_url }}) describe their SIMs, routing, targets, and radio technologies so that results can be interpreted within that scope.
+
+## Repeatable execution
+
+Containerised tasks follow a defined job lifecycle. Active measurements run sequentially to avoid interference; background tasks observe the relevant phases of a connection. [See the measurement model]({{ '/measurements/' | relative_url }}).
+
+## Information for hosts
+
+For power, Ethernet, outbound VPN access, and the recommended local-network isolation, see [Host a node]({{ '/host/' | relative_url }}).

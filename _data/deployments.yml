@@ -1,0 +1,89 @@
+# Location inventory confirmed by the project owner on this date.
+# A missing node_count means that the number of nodes is not confirmed.
+# Coordinates are approximate city/region locations, not host addresses.
+verified: '2026-11-25'
+locations:
+  - city: Würzburg
+    country: Germany
+    status: active
+    lat: 49.7913
+    lon: 9.9534
+  - city: Munich
+    country: Germany
+    status: active
+    lat: 48.1372
+    lon: 11.5756
+  - city: Trondheim
+    country: Norway
+    status: active
+    lat: 63.4305
+    lon: 10.3951
+  - city: Zagreb
+    country: Croatia
+    status: active
+    lat: 45.8151
+    lon: 15.9820
+  - city: Milan
+    country: Italy
+    status: active
+    lat: 45.4642
+    lon: 9.1900
+  - city: Sardinia
+    country: Italy
+    status: active
+    lat: 40.1291
+    lon: 9.0035
+  - city: Madrid
+    country: Spain
+    status: active
+    lat: 40.4168
+    lon: -3.7038
+  - city: Lucerne
+    country: Switzerland
+    status: active
+    lat: 47.0502
+    lon: 8.3093
+  - city: Wrocław
+    country: Poland
+    status: active
+    lat: 51.1079
+    lon: 17.0385
+  - city: Helsinki
+    country: Finland
+    status: active
+    lat: 60.1699
+    lon: 24.9384
+  - city: Karlskrona
+    country: Sweden
+    status: active
+    node_count: 1
+    lat: 56.1612
+    lon: 15.5869
+  - city: Paris
+    country: France
+    status: active
+    lat: 48.8566
+    lon: 2.3522
+  - city: São Paulo
+    country: Brazil
+    status: active
+    node_count: 2
+    lat: -23.5505
+    lon: -46.6333
+  - city: Warsaw
+    country: Poland
+    status: planned
+    lat: 52.2297
+    lon: 21.0122
+  - country: United States
+    status: planned
+  - country: Netherlands
+    status: planned
+  - country: Singapore
+    status: planned
+  - country: Australia
+    status: planned
+  - country: New Zealand
+    status: planned
+  - country: Canada
+    status: planned

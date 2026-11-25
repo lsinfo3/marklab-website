@@ -2,14 +2,9 @@
   link: /platform/
 - name: Locations
   link: /locations/
-- name: Results
+- name: Publications & data
   link: /results/
 - name: News
   link: /blog/
-#- name: About
-#  link: /about/
-- name: Contact
-  link: /contact/
-
-
-
+- name: Host a node
+  link: /host/

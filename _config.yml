@@ -1,32 +1,20 @@
-title: Marklab Website
-email: todo
-description: Website of marklab
-
-baseurl: "/marklab-website" # the subpath of your site, e.g. /blog
-
-# Theme settings
-
-# With GitHub Pages Gem
-remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
+title: MARKlab
+email: marklab@informatik.uni-wuerzburg.de
+description: Distributed measurements of cellular network performance, roaming, and energy consumption. Explore MARKlab research or host a measurement node.
+url: "https://lsinfo3.github.io"
+baseurl: "/marklab-website"
+markdown: kramdown
 plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-
-sass:
-  style: compressed
-
-#fixed_navbar: top
-footer_menu: footer
-
+  - jekyll-feed
+  - jekyll-sitemap
 collections:
   pages:
     output: true
     permalink: /:path/
-  posts:
-    output: true
-    permalink: /blog/:title/
-
-
-paginate: 5
-paginate_path: "/blog/page:num/"
-
+permalink: /blog/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - scripts

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article class="wrap article-wrap">
+  <header class="page-heading"><a class="eyebrow" href="{{ '/blog/' | relative_url }}">MARKlab / News</a><h1>{{ page.title }}</h1><p class="muted"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page.author %} · {{ page.author }}{% endif %}</p></header>
+  <div class="prose">{{ content }}</div>
+  <p class="article-back"><a href="{{ '/blog/' | relative_url }}">All MARKlab news</a></p>
+</article>

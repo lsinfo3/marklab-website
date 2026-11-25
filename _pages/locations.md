@@ -1,63 +1,43 @@
 ---
 layout: page
-title: Locations
-#subtitle: Mark
+title: Measurement locations
+section: Deployments
+description: MARKlab deployments across Europe and Brazil, with further international locations planned.
 permalink: /locations/
-hero_image: /marklab-website/assets/images/marklab_hero3.png
-#hero_height: is-fullwidth
-hero_darken: true
+map: true
 ---
+{% assign active = site.data.deployments.locations | where: 'status', 'active' %}
+{% assign planned = site.data.deployments.locations | where: 'status', 'planned' %}
+{% assign countries = active | map: 'country' | uniq %}
 
-## MARK Deployments
+**{{ active.size }} active locations across {{ countries.size }} countries.** São Paulo hosts two nodes. Location entries can represent multiple nodes; this is not a total node count.
 
-<div id="map" style="width: 100%; height: 500px;"></div>
+Inventory confirmed {{ site.data.deployments.verified | date: '%-d %B %Y' }}. “Active” describes a deployment, not real-time connectivity or availability for a particular experiment. Radio technology availability depends on the node hardware and local networks.
 
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<div class="legend"><span class="status active">Active deployment · solid circle</span><span class="status planned">Planned deployment · dashed circle</span></div>
+<div id="map" class="map" role="region" aria-label="Map of MARKlab deployments; the full inventory follows in a table"></div>
+<script id="deployment-data" type="application/json">{{ site.data.deployments.locations | jsonify }}</script>
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+Map markers show approximate city or regional locations, not host addresses. Planned countries without a confirmed city are listed below without a map marker. Map tiles are provided by OpenStreetMap; loading the map connects your browser to external map services.
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      var map = L.map('map').setView([51.1657, 10.4515], 4); // Centered on Europe
+## Active deployments
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
+<div class="table-scroll" role="region" aria-label="Active deployment locations" tabindex="0">
+<table>
+<thead><tr><th scope="col">Location</th><th scope="col">Country</th><th scope="col">Notes</th></tr></thead>
+<tbody>{% for location in active %}<tr><td>{{ location.city }}</td><td>{{ location.country }}</td><td>{% if location.node_count %}{{ location.node_count }} {% if location.node_count == 1 %}node{% else %}nodes{% endif %}{% else %}Active deployment{% endif %}</td></tr>{% endfor %}</tbody>
+</table>
+</div>
 
-      // Add markers with tooltips
-      var locations = [
-          { lat: 49.781108225830415, lon: 9.97292187555465, name: "Würzburg, Germany", status: "Active" }, 
-          { lat: 48.15677758945259,  lon: 11.566836443047128, name: "Munich, Germany", status: "Active" },
-          { lat: 63.43054077399492, lon: 10.395076455285725, name: "Trondheim, Norway", status: "Active" },
-          { lat: 45.81512621395278, lon: 15.981975001057377, name: "Zagreb, Croatia", status: "Active" }, 
-          { lat: 45.468426594164924, lon: 9.190887769941973, name: "Milan, Italy", status: "Active" },
-          { lat: 40.12909034903276, lon: 9.003508650660718, name: "Sardinia, Italy", status: "Active" },
-          { lat: 40.41592488814913, lon: -3.697665266617252, name: "Madrid, Spain", status: "Active" },
-          { lat: 47.14106267433893, lon: 8.429255642694061, name: "Lucerne, Switzerland", status: "Active" },
-          { lat: 51.10931014256227, lon: 17.03434944281905, name: "Wrocław, Poland", status: "Active" },
-          { lat: 52.229943242940216, lon: 21.00854120242006, name: "Warsaw, Poland", status: "Planned" },
-          { lat: 48.857699237086486, lon: 2.351666038520643, name: "Paris, France", status: "Planned" },
-          { lat: 41.157444996101894, lon: -8.62904082950535, name: "Porto, Portugal", status: "Active" },
-          { lat: 60.17030798072441, lon: 24.930068920730672, name: "Helsinki, Finland", status: "Active" },
-          { lat: 39.75132951091126, lon: -101.41992588683895, name: "USA", status: "Planned" },
-          { lat: -8.478312628480555, lon: -54.89392071546018, name: "Brazil", status: "Planned" }
-      ];
+## Planned deployments
 
-      // Status-based icons
-      var statusIcons = {
-          "Active": L.icon({ iconUrl: '/marklab-website/assets/icons/marker-icon-red.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
-          "Planned": L.icon({ iconUrl: '/marklab-website/assets/icons/marker-icon-grey.png', iconSize: [25, 41], iconAnchor: [12, 41] }),
-      };
+<div class="table-scroll" role="region" aria-label="Planned deployment locations" tabindex="0">
+<table>
+<thead><tr><th scope="col">Country</th><th scope="col">Location</th><th scope="col">Status</th></tr></thead>
+<tbody>{% for location in planned %}<tr><td>{{ location.country }}</td><td>{{ location.city | default: 'To be confirmed' }}</td><td>Planned</td></tr>{% endfor %}</tbody>
+</table>
+</div>
 
-      // Add markers with status-based colors
-      locations.forEach(function(location) {
-          var marker = L.marker([location.lat, location.lon], { icon: statusIcons[location.status] }).addTo(map);
-          
-          // Tooltip
-          marker.bindTooltip(`<strong>${location.name}</strong><br>Status: ${location.status}`, 
-              { permanent: false, direction: "top" });
-      });
-  });
-</script>
+## Help expand the platform
+
+A new host can add a valuable research perspective, including in countries where MARKlab already has nodes. [Find out what hosting involves]({{ '/host/' | relative_url }}) or contact [{{ site.email }}](mailto:{{ site.email }}).

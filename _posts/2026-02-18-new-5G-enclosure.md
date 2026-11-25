@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working on 5G Version
+title: "Tinkering with 5G: New Enclosure Day"
 #subtitle: The blog post subtitle
 date: 2026-02-18
 author: Viktoria Vomhoff
@@ -8,7 +8,6 @@ hero_image: /marklab-website/assets/images/marklab_hero3.png
 hero_darken: true
 ---
 
-### Tinkering with 5G: New Enclosure Day
 We’re officially diving into the 5G version of the MARK node. We’ve settled on a modem, and now start working on the hardware side. It’s not quite as simple as "plug and play"—the move to 5G is forcing us to rethink the enclosure design.
 
 Since we’re dealing with a much denser antenna array this time around, the internal real estate is getting crowded. It’s a bit of a balancing act: we need to find the right placement for the extra antennas to ensure signal integrity while keeping the overall footprint manageable.
