@@ -24,8 +24,8 @@ Map markers show approximate city or regional locations, not host addresses. Pla
 
 <div class="table-scroll" role="region" aria-label="Active deployment locations" tabindex="0">
 <table>
-<thead><tr><th scope="col">Location</th><th scope="col">Country</th><th scope="col">Notes</th></tr></thead>
-<tbody>{% for location in active %}<tr><td>{{ location.city }}</td><td>{{ location.country }}</td><td>{% if location.node_count %}{{ location.node_count }} {% if location.node_count == 1 %}node{% else %}nodes{% endif %}{% else %}Active deployment{% endif %}</td></tr>{% endfor %}</tbody>
+<thead><tr><th scope="col">Location</th><th scope="col">Country</th></tr></thead>
+<tbody>{% for location in active %}<tr><td>{{ location.city }}</td><td>{{ location.country }}</td></tr>{% endfor %}</tbody>
 </table>
 </div>
 
