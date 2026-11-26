@@ -24,7 +24,20 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner wrap">
-      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="MARKlab home">MARK<span>lab</span><small>Mobile network measurement research</small></a>
+      <div class="header-brand">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="MARKlab home">MARK<span>lab</span></a>
+        <div class="header-affiliation">
+          <div class="header-partner-logos">
+            <a class="header-chair-logo" href="https://www.informatik.uni-wuerzburg.de/comnet/" aria-label="Chair of Communication Networks, University of Würzburg">
+              <img src="{{ '/assets/images/i3.png' | relative_url }}" alt="LS Informatik III logo" width="2006" height="2036">
+            </a>
+            <a class="header-emnify-logo" href="https://www.emnify.com/" aria-label="emnify website">
+              <img src="{{ '/assets/images/emnify_new_small.png' | relative_url }}" alt="emnify logo" width="397" height="348">
+            </a>
+          </div>
+          <p>Developed at LS Informatik III<br>University of Würzburg<br>in cooperation with emnify</p>
+        </div>
+      </div>
       <nav aria-label="Main navigation">
         {% for item in site.data.navigation %}
         <a href="{{ item.link | relative_url }}"{% if page.url == item.link %} aria-current="page"{% endif %}{% if item.link == '/host/' %} class="nav-cta"{% endif %}>{{ item.name }}</a>
@@ -35,7 +48,7 @@
   <main id="main" tabindex="-1">{{ content }}</main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div><a class="wordmark" href="{{ '/' | relative_url }}">MARK<span>lab</span></a><p>A research platform of the Chair of Communication Networks,<br>University of Würzburg.</p></div>
+      <div><a class="wordmark" href="{{ '/' | relative_url }}">MARK<span>lab</span></a><p>Measurements of cellular network performance,<br>roaming, and energy consumption.</p></div>
       <div><p class="eyebrow">Get in touch</p><a href="mailto:{{ site.email }}">{{ site.email }}</a><p><a href="{{ '/host/' | relative_url }}">Host a measurement node</a></p></div>
       <nav aria-label="Footer navigation"><a href="https://github.com/lsinfo3/marklab">Platform source code</a><a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/contact/' | relative_url }}">Contact</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a><a href="{{ '/feed.xml' | relative_url }}">News feed</a></nav>
     </div>
